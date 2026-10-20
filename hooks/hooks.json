@@ -1,0 +1,39 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Write|Edit|Agent|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$(dirname \"$0\")/../scripts/pre-tool-use.sh\"",
+            "timeout": 5000
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash|Write|Edit|Agent|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$(dirname \"$0\")/../scripts/post-tool-use.sh\"",
+            "timeout": 5000
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$(dirname \"$0\")/../scripts/session-stop.sh\"",
+            "timeout": 5000
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "contextstellar",
+  "description": "Context engineering plugin for Claude Code — real-time prompt scoring, RLM adaptive weights, and token optimization. Scores every tool use across 5 dimensions (token utilization, structural clarity, specificity, content density, cache-friendliness) and learns optimal weights for your project.",
+  "version": "1.0.0",
+  "author": {
+    "name": "ContextStellar"
+  },
+  "homepage": "https://contextstellar.com",
+  "repository": "https://github.com/sunnypatneedi/claude-code-contextstellar",
+  "license": "MIT"
+}
